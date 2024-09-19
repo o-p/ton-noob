@@ -1,0 +1,26 @@
+;; crc32('transfer query_id:uint64 amount:VarUInteger 16 destination:MsgAddress response_destination:MsgAddress custom_payload:Maybe ^Cell forward_ton_amount:VarUInteger 16 forward_payload:Either Cell ^Cell = InternalMsgBody') = 0x8f8a7ea5
+;; 0x8f8a7ea5 & 0x7fffffff = 0xf8a7ea5
+int op::transfer() asm "0xf8a7ea5 PUSHINT";
+
+;; crc32('transfer_notification query_id:uint64 amount:VarUInteger 16 sender:MsgAddress forward_payload:Either Cell ^Cell = InternalMsgBody') = 0xf362d09c
+;; 0xf362d09c & 0x7fffffff = 0x7362d09c
+int op::transfer_notification() asm "0x7362d09c PUSHINT";
+
+;; crc32('internal_transfer query_id:uint64 amount:VarUInteger 16 from:MsgAddress response_address:MsgAddress forward_ton_amount:VarUInteger 16 forward_payload:Either Cell ^Cell = InternalMsgBody') = 0x978d4519
+;; 0x978d4519 & 0x7fffffff = 0x178d4519
+int op::internal_transfer() asm "0x178d4519 PUSHINT";
+
+;; crc32('excesses query_id:uint64 = InternalMsgBody') = 0x553276db
+;; 0x553276db | 0x80000000 = 0xd53276db
+int op::excesses() asm "0xd53276db PUSHINT";
+
+;; crc32('burn query_id:uint64 amount:VarUInteger 16 response_destination:MsgAddress custom_payload:Maybe ^Cell = InternalMsgBody') = 0x595f07bc
+;; 0x595f07bc & 0x7fffffff = 0x595f07bc
+int op::burn() asm "0x595f07bc PUSHINT";
+
+;; crc32('burn_notification query_id:uint64 amount:VarUInteger 16 sender:MsgAddress response_destination:MsgAddress = InternalMsgBody') = 0x7bdd97de
+;; 0x7bdd97de & 0x7fffffff = 0x7bdd97de
+int op::burn_notification() asm "0x7bdd97de PUSHINT";
+
+;; Minter
+int op::mint() asm "21 PUSHINT";
