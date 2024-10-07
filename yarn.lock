@@ -661,6 +661,13 @@
   resolved "https://registry.yarnpkg.com/@tact-lang/opcode/-/opcode-0.0.16.tgz#cc9e4117ce706d8bb6e054a520bab719f70adf96"
   integrity sha512-YJTUjoDOy+e+FHHppJiF+uWJ2IMjVknB9VQ5n78pknCE129DazCb/nFXnw0wVRDVcn8Tn59ky+pmjiQjQOjEbw==
 
+"@ton-api/client@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@ton-api/client/-/client-0.1.1.tgz#fc31ae6d102f179812693c9f4530943ebe005014"
+  integrity sha512-vtc9689IECIZ9z+42C1nRX+d9q7eZaO1qCsn22cuM38SC+e19eXWJakz949+tXMF+LWBYf9eFQKyskXAx0C4Cg==
+  dependencies:
+    core-js-pure "^3.38.0"
+
 "@ton-community/func-js-bin@0.4.4-newops.1":
   version "0.4.4-newops.1"
   resolved "https://registry.yarnpkg.com/@ton-community/func-js-bin/-/func-js-bin-0.4.4-newops.1.tgz#d21cd01da8abf29cb301969f782c01b0852fdac5"
@@ -1361,6 +1368,11 @@ convert-source-map@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-2.0.0.tgz#4b560f649fc4e918dd0ab75cf4961e8bc882d82a"
   integrity sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==
+
+core-js-pure@^3.38.0:
+  version "3.38.1"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.38.1.tgz#e8534062a54b7221344884ba9b52474be495ada3"
+  integrity sha512-BY8Etc1FZqdw1glX0XNOq2FDwfrg/VGqoZOZCdaL+UmdaqDwQwYXkMJT4t6In+zfEfOJDcM9T0KdbBeJg8KKCQ==
 
 create-jest@^29.7.0:
   version "29.7.0"

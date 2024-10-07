@@ -10,6 +10,7 @@
         "test": "DEBUG=test:* jest --verbose"
     },
     "devDependencies": {
+        "@ton-api/client": "^0.1.1",
         "@ton-community/func-js": "^0.7.0",
         "@ton/blueprint": "^0.24.0",
         "@ton/core": "^0.57.0",
